@@ -1,6 +1,16 @@
 @body-background: #eeeeee;
+@mobile-width: 320px;
 @mobile-width-only: 767px;
 @tablet-width: 768px;
+@tablet-max-width: (@desktop-width - 1);
 @desktop-width: 1200px;
 @retina-dpi: 144dpi;
 @retina-dppx: 1.5dppx;
+
+@mobile: ~"(min-width: @{mobile-width})";
+@tablet: ~"(min-width: @{tablet-width})";
+@desktop: ~"(min-width: @{desktop-width})";
+
+@tablet-only: ~"(max-width: @{tablet-max-width})";
+
+@retina: ~"(min-resolution: @{retina-dpi})";
