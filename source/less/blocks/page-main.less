@@ -1,0 +1,71 @@
+.page-main__header {
+  position: relative;
+  background-color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 40px 6.25% 10px;
+
+  &::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: -30px;
+    height: 37px;
+    width: 100%;
+    background-image: url("../img/bg-triangle.svg");
+    background-repeat: no-repeat;
+    background-size: 100% 37px;
+  }
+
+  @media @tablet {
+    padding: 50px 0;
+
+    &::after {
+      display: none;
+    }
+  }
+}
+
+.page-main__title {
+  margin: 0;
+  padding: 0;
+  padding-left: 5px;
+  padding-right: 5px;
+
+  color: #000000;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+
+  @media @tablet {
+    font-size: 30px;
+    max-width: 490px;
+    margin: 0 auto;
+
+    &--index {
+      font-size: 21px;
+    }
+  }
+}
+
+.page-main__text {
+  margin: 28px auto 0;
+  line-height: 24px;
+
+  &--index {
+    line-height: 26px;
+
+    @media @tablet {
+      max-width: none;
+    }
+  }
+
+  @media @tablet {
+    max-width: 490px;
+  }
+}
+
+.page-main__map {
+
+}

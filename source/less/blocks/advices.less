@@ -1,0 +1,88 @@
+.advices {
+  background-color: #ffffff;
+  color: #333333;
+
+  padding: 30px 20px 15px;
+  margin: 0 auto;
+  list-style: none;
+  width: 268px;
+
+  @media @tablet {
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+    padding: 0;
+  }
+}
+
+.advices__item {
+  position: relative;
+  box-sizing: border-box;
+  padding-left: 44px;
+  margin-bottom: 22px;
+  padding-top: 6px;
+
+  @media @tablet {
+    text-align: center;
+    width: 33.33333%;
+    padding: 158px 47px 63px;;
+    margin-bottom: 0;
+
+    &--house {
+      order: 0;
+    }
+
+    &--gift {
+      order: 2;
+    }
+  }
+}
+
+.advices__icon {
+  position: absolute;
+  width: 40px;
+  height: 45px;
+  fill: #81b3d2;
+  top: -4px;
+  left: -4px;
+
+  &--gift {
+    top: -7px;
+    left: -2px;
+  }
+
+  &--burger {
+    top: 0px;
+    left: -7px;
+  }
+
+  @media @tablet {
+    top: 61px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 80px;
+    height: 80px;
+
+    &--gift {
+      left: 53%;
+    }
+  }
+
+}
+
+.advices__title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  color: #000000;
+  margin: 0;
+  margin-bottom: 15px;
+
+  @media @tablet {
+    font-size: 21px;
+    margin-bottom: 23px;
+  }
+}
+.advices__text {
+  margin: 0;
+}
