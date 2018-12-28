@@ -1,0 +1,40 @@
+.video {
+  position: relative;
+
+  @media @tablet {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  @media @desktop {
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+    width: 800px;
+  }
+}
+
+.video__image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.video__panel {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin-left: 6.25%;
+  margin-right: 6.25%;
+
+  @media @tablet {
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+
+  @media @desktop {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
