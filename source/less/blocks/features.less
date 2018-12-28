@@ -35,10 +35,14 @@
     width: 33.33%;
     padding: 45px 20px 26px
   }
+  @media @desktop {
+    padding: 53px 45px 26px;
+  }
+
 }
 
 .features__subtitle {
-  margin: 0;
+  margin: 0 auto;
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
@@ -46,6 +50,10 @@
 
   @media @tablet {
     font-size: 21px;
+  }
+
+  @media @desktop {
+    max-width: 160px;
   }
 
   &--main {
@@ -88,5 +96,12 @@
 
   @media @tablet {
     height: 256px;
+  }
+
+  @media @desktop {
+    position: absolute;
+    top: 56%;
+    transform: translateY(-54%);
+    height: auto;
   }
 }

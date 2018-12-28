@@ -5,6 +5,16 @@
 
   padding-top: 20px;
   padding-bottom: 20px;
+
+  @media @tablet {
+    display: flex;
+    padding-top: 15px;
+  }
+
+  @media @desktop {
+    padding-top: 17px;
+    padding-bottom: 17px;
+  }
 }
 
 .page-footer__column {
@@ -13,11 +23,19 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media @tablet {
+    width: 33.333%;
+  }
 }
 
 .page-footer__hashtag {
   font-size: 21px;
   font-weight: 700;
+
+  @media @desktop {
+    width: 160px;
+  }
 }
 
 .page-footer__copyright-text {
@@ -25,9 +43,31 @@
   font-weight: 400;
   margin-right: 6px;
   line-height: 26px;
+
+
+  @media @tablet {
+    margin-left: 8px;
+  }
+
+  @media @desktop {
+    margin-left: 32px;
+  }
 }
 
 .page-footer__copyright-icon {
   width: 40px;
   height: 40px;
+}
+
+.page-footer__copyright-link {
+  width: 27px;
+  height: 34px;
+}
+
+.page-footer__copyright-link:hover .page-footer__copyright-icon {
+  fill: @bg-color-button;
+}
+
+.page-footer__copyright-link:active .page-footer__copyright-icon {
+  fill-opacity: 0.3;
 }
